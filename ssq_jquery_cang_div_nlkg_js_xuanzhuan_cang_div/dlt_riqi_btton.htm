@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>双色球随机{中。没。中}-内联框架-多窗口</title> 
+</head> 
+<body>
+
+
+
+
+<h1   style=color:#888888></>
+
+
+
+
+<p  style=color:#FF0000>点击下面的按钮来显示今天是周几：</p>
+
+<button   style="font-size:35px;color:
+
+#FF0000"    onclick="myFunction()">显示日期点我</button>
+
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var x;
+	var d=new Date().getDay();
+	switch (d){
+  		case 0:x="今天是星期日，双色球开奖";
+    	break;
+ 		case 1:x="今天是星期一，大乐透开奖";
+        break;
+  		case 2:x="今天是星期二，双色球开奖";
+        break;
+      case 3:x="今天是星期三，大乐透开奖";
+   	 	break;
+  		case 4:x="今天是星期四，双色球开奖";
+    	break;
+  		case 5:x="今天是星期五，七乐彩开奖";
+        break;
+  		case 6:x="今天是星期六，大乐透开奖";
+    	break;
+ 	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+
+​
+</body>
+</html>
+
+
+
